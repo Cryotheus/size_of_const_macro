@@ -1,0 +1,19 @@
+[package]
+authors = [ "Cryotheus" ]
+description = "Macro for generating the constant of a type's size."
+edition = "2021"
+license = "MIT OR Apache-2.0"
+name = "size_of_const_macro"
+readme = "README.md"
+repository = "https://github.com/Cryotheus/size_of_const_macro"
+rust-version = "1.56"
+version = "0.1.0"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+anyhow = "1.0"
+proc-macro2 = "1.0.79"
+quote = "1.0.35"
+syn = { version = "2.0.55", features = ["fold"] }
